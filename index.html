@@ -610,6 +610,43 @@
                 console.log(myDog.name);
 
 
+                //addding new properties  in object;
+                myDog.bark = "woof";//added new properties
+                myDog.enemey = ["another dogs","black dog"];//here is how we can add new properties to  our js object
+                console.log(myDog);
+                console.log(myDog["bark"]);
+
+
+                //Delete Properties from a JavaScript Object
+                
+                delete myDog.bark;//here's how we can delete any unnecessary properties from object
+                console.log(myDog);//let's see the result
+
+                //using object for lookups
+
+                // Setup
+                function phoneticLookup(val) {
+                var result = "";
+
+                // Only change code below this line
+                
+                var lookup = {
+                    "alpha": "Adams",
+                    "bravo": "Boston",
+                    "charlie": "Chicago",
+                    "delta": "Denver",
+                    "echo": "Easy",
+                    "foxtrot": "frank"
+                };
+                result = lookup[val];
+                // Only change code above this line
+                return result;
+                }
+
+                // Change this value to test
+                console.log(phoneticLookup("foxtrot"));
+
+
                 
       </script>
 </body>
