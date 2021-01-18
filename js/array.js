@@ -32,3 +32,13 @@ anArray.shift()//.shift works like pop but it removes items from the beginning o
 console.log(anArray);
 anArray.unshift(555);//unshift works like push but it inserts items from the beginning of an array
 console.log(anArray);
+
+//let's learn about the length of an array
+//how we can know length of an array 
+console.log(anArray.length)//using .length keyword we can easily know the length of array
+
+//let's learn about slice
+//slicing means cutting elements from array
+var slice = anArray.slice(3)//that means we want to cut the first 3 elements if we want to cut 2 we may use .slice(2)
+console.log(slice);
+console.log(anArray.slice(2,4));
