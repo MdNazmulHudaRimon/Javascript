@@ -12,6 +12,18 @@ console.log(max);
 var sum = 0;
 for(i=0; i<numbers.length; i++){
     var elements = numbers[i];
-    sum += element;
+    sum += elements;
 }
 console.log(sum);
+
+
+
+var array = [25,28,56,54,56,88,66,,25,2588544,14454];
+var maximum = array[0];
+for(let i=0; i<=array.length;i++){
+    var elements = array[i];
+    if(elements>max){
+        max = elements;
+    }
+}
+console.log(max);
