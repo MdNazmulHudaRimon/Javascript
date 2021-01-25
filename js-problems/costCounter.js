@@ -20,13 +20,3 @@ function hotelCost(stayingTime){
 }
 var totalcost = hotelCost(5);
 console.log(totalcost);
-aaaaa
-
-addEventListenera
-addEventListenera
-aaaaaa
-a
-aaaaaa
-
-
-aaaaa
