@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Events</title>
+</head>
+<body>
+    <h1 onclick=handleClick()>Exploring Events</h1>
+    <button onclick="alert(7)">Click Me</button>
+    <button id="first-btn">button-1</button>
+    <button id = "second-btn">button-2</button>
+    <button id = "third-btn">button-3</button>
+    <script>
+        var buttonOne = document.getElementById('first-btn');
+        buttonOne.onclick = function(){
+            console.log("First one clicked");
+        }
+        function secondButton(){
+            document.body.style.backgroundColor = 'cyan';
+        }
+        var buttonTwo = document.getElementById('second-btn');
+        buttonTwo.onclick = secondButton;//that function will work after click
+        // let's see how we can add event listener
+        function thirdButton(){
+            document.body.style.backgroundColor = 'tomato';
+        }
+        var buttonThree = document.getElementById('third-btn');
+        buttonThree.addEventListener('click',thirdButton);
+
+
+        function handleClick(){
+            alert("SomeOne Clicked me");
+        }
+    </script>
+    
+</body>
+</html>
