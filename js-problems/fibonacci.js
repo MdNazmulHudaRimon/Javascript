@@ -5,5 +5,5 @@ function fibonacci(n) {
     }
     return fibo;
 }
-const result = fibonacci(100);
+const result = fibonacci(10);
 console.log(result);
